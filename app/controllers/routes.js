@@ -34,6 +34,7 @@ module.exports = function(bot){
     .matches(/^hobbies|interests|passion|passions|interest|hobby/i, '/hobbies')
     .matches(/^strengths|strength|abilities/i, '/strengths')
     .matches(/^ideal|role/i, '/ideal')
+    .matches(/^bye|goodbye/i, '/bye')
     .onDefault(builder.DialogAction.send("I'm sorry but I didn't understand - I'm still learning!"))
 );
 
@@ -60,6 +61,10 @@ module.exports = function(bot){
   bot.dialog('/ideal', function (session) {
     session.send(randomResponses('idealrole'));
     session.beginDialog('/main');
+  });
+
+  bot.dialog('/bye', function (session) {
+    session.send("Great to chat with you!");
   });
 
 }
