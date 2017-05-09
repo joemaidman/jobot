@@ -1,6 +1,5 @@
-[![Build Status](https://travis-ci.org/joemaidman/jobot.svg?branch=master)](https://travis-ci.org/joemaidman/jobot)
+# JOBOT [![Build Status](https://travis-ci.org/joemaidman/jobot.svg?branch=master)](https://travis-ci.org/joemaidman/jobot)
 
-![Logo](http://www.joemaidman.com/wp-content/uploads/2015/08/HeadD.jpg)
 Jobot is an interactive chat bot designed to answer interview questions based on my previous job application submissions.
 
 It is a full stack javascript app built with Node.js and the Microsoft Bot framework. The bot uses regular expressions to select random responses from a databank of answers.
