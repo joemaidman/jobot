@@ -10,12 +10,18 @@ describe("Server", function(){
   before(function(){
     connector = require('../../app/models/connector.js');
     bot = require('../../app/models/bot.js')(connector);
+    server = require("../../app/controllers/server.js")(connector)
+    routes = require("../../app/controllers/routes.js")(bot)
   });
 
   describe('/index', function(){
 
-    it('it should greet the user', function(done){
-      bot.send('/');
+    it('asdasdas', function (done) {
+      
+        server.get('/', function (message) {
+            assert.include(message.text.toLowerCase(), '');
+            done();
+        });
     });
   });
 });

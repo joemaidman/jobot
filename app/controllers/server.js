@@ -7,6 +7,6 @@ module.exports = function(connector){
   });
 
   server.post('/api/messages', connector.listen());
-  
+
   return server;
 }
