@@ -16,12 +16,12 @@ describe("Server", function(){
 
   describe('/index', function(){
 
-    it('asdasdas', function (done) {
-      
-        server.get('/', function (message) {
-            assert.include(message.text.toLowerCase(), '');
-            done();
-        });
-    });
+    // it('asdasdas', function (done) {
+    //
+    //     server.get('/', function (message) {
+    //         assert.include(message.text.toLowerCase(), '');
+    //         done();
+    //     });
+    // });
   });
 });
