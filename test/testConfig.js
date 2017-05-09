@@ -3,5 +3,8 @@ global.chai = require("chai");
 global.expect = require('chai').expect;
 global.sinon = require('sinon');
 global.sinonChai = require("sinon-chai");
+global.chaiHttp = require("chai-http");
 chai.use(sinonChai);
 global.timekeeper = require('timekeeper');
+chai.use(chaiHttp);
+process.env.ENV = 'TEST';
