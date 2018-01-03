@@ -29,12 +29,12 @@ module.exports = function(bot){
   ]);
 
   bot.dialog('/main', new builder.IntentDialog()
-    .matches(/^motivation|motivate|motivates|motivated|driven|drives/i, '/motivation')
-    .matches(/^experience|past|career|life|previous|xp/i, '/experience')
-    .matches(/^hobbies|interests|passion|passions|interest|hobby/i, '/hobbies')
-    .matches(/^strengths|strength|abilities/i, '/strengths')
-    .matches(/^ideal|role/i, '/ideal')
-    .matches(/^bye|goodbye/i, '/bye')
+    .matches(/motivation|motivate|motivates|motivated|driven|drives/i, '/motivation')
+    .matches(/experience|past|career|life|previous|xp/i, '/experience')
+    .matches(/hobbies|interests|passion|passions|interest|hobby/i, '/hobbies')
+    .matches(/strengths|strength|abilities/i, '/strengths')
+    .matches(/ideal|role/i, '/ideal')
+    .matches(/bye|goodbye/i, '/bye')
     .onDefault(builder.DialogAction.send("I'm sorry but I didn't understand - I'm still learning!"))
 );
 
